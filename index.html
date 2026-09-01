@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع تشريح مرض السكري</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🩺 مشروع تشريح مرض السكري</h1>
+            <p class="subtitle">دليل شامل عن مرض السكري - الأنواع، الأعراض، العلاج والوقاية</p>
+        </header>
+
+        <!-- التبويبات -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('overview')">نظرة عامة</button>
+            <button class="tab-btn" onclick="switchTab('types')">أنواع السكري</button>
+            <button class="tab-btn" onclick="switchTab('symptoms')">الأعراض</button>
+            <button class="tab-btn" onclick="switchTab('causes')">الأسباب والعوامل</button>
+            <button class="tab-btn" onclick="switchTab('treatment')">العلاج والوقاية</button>
+            <button class="tab-btn" onclick="switchTab('stats')">الإحصائيات</button>
+            <button class="tab-btn" onclick="switchTab('lifestyle')">نمط الحياة الصحي</button>
+        </div>
+
+        <!-- المحتوى الرئيسي -->
+        <main>
+            <!-- نظرة عامة -->
+            <div id="overview" class="tab-content active">
+                <h2>🔍 نظرة عامة على مرض السكري</h2>
+                
+                <div class="info-box">
+                    <h3>ما هو مرض السكري؟</h3>
+                    <p>مرض السكري هو اضطراب في عملية التمثيل الغذائي يؤثر على قدرة الجسم على التحكم في مستويات السكر في الدم. الأنسولين هو الهرمون المسؤول عن تنظيم السكر، وعندما يحدث خلل في إنتاجه أو استخدامه، يرتفع السكر في الدم.</p>
+                </div>
+
+                <h3>آلية عمل جسم الإنسان الطبيعية</h3>
+                <div class="diagram">
+                    <div class="flow">
+                        <div class="step">1️⃣ تناول الطعام والكربوهيدرات</div>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">2️⃣ تحويل السكريات إلى جلوكوز</div>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">3️⃣ امتصاص الجلوكوز في الدم</div>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">4️⃣ إفراز البنكرياس للأنسولين</div>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">5️⃣ دخول الجلوكوز إلى الخلايا</div>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">✅ مستوى سكر دم طبيعي</div>
+                    </div>
+                </div>
+
+                <div class="content-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>📊 المستويات الطبيعية للسكر</h3>
+                        <p><strong>على الريق:</strong> 70-100 ملغ/ديسيلتر</p>
+                        <p><strong>بعد الأكل:</strong> أقل من 140 ملغ/ديسيلتر</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚠️ مقدمات السكري</h3>
+                        <p><strong>على الريق:</strong> 100-125 ملغ/ديسيلتر</p>
+                        <p><strong>بعد الأكل:</strong> 140-199 ملغ/ديسيلتر</p>
+                    </div>
+                    <div class="card">
+                        <h3>🚨 مرض السكري</h3>
+                        <p><strong>على الريق:</strong> 126 ملغ/ديسيلتر فأكثر</p>
+                        <p><strong>بعد الأكل:</strong> 200 ملغ/ديسيلتر فأكثر</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أنواع السكري -->
+            <div id="types" class="tab-content">
+                <h2>🏥 أنواع مرض السكري</h2>
+
+                <div class="types-container">
+                    <div class="type-card">
+                        <h3>السكري من النوع الأول (Type 1)</h3>
+                        <div class="type-details">
+                            <p><strong>التعريف:</strong> مرض مناعي يهاجم البنكرياس ويدمر خلايا إنتاج الأنسولين.</p>
+                            <p><strong>النسبة:</strong> 5-10% من مصابي السكري</p>
+                            <p><strong>سن الظهور:</strong> عادة في الأطفال والشباب</p>
+                            <p><strong>العلاج:</strong> حقن الأنسولين يومياً</p>
+                            <p><strong>الأسباب:</strong> وراثية وعوامل بيئية</p>
+                        </div>
+                    </div>
+
+                    <div class="type-card">
+                        <h3>السكري من النوع الثاني (Type 2)</h3>
+                        <div class="type-details">
+                            <p><strong>التعريف:</strong> البنكرياس ينتج أنسولين لكن الجسم لا يستطيع استخدامه بفاعلية (مقاومة الأنسولين).</p>
+                            <p><strong>النسبة:</strong> 90-95% من مصابي السكري</p>
+                            <p><strong>سن الظهور:</strong> عادة بعد سن 45 سنة</p>
+                            <p><strong>العلاج:</strong> تعديل نمط الحياة + أدوية فموية</p>
+                            <p><strong>عوامل الخطر:</strong> السمنة، الخمول، التاريخ العائلي</p>
+                        </div>
+                    </div>
+
+                    <div class="type-card">
+                        <h3>سكري الحمل (Gestational)</h3>
+                        <div class="type-details">
+                            <p><strong>التعريف:</strong> ارتفاع السكر في الدم أثناء الحمل فقط.</p>
+                            <p><strong>النسبة:</strong> 2-10% من الحوامل</p>
+                            <p><strong>سن الظهور:</strong> الثلث الثاني من الحمل</p>
+                            <p><strong>المضاعفات:</strong> قد يؤثر على الأم والجنين</p>
+                            <p><strong>الخطر:</strong> قد يتطور إلى النوع الثاني بعد الحمل</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>أنواع أخرى نادرة</h3>
+                    <ul>
+                        <li><strong>السكري الثانوي:</strong> ناتج عن أمراض أخرى (البنكرياس، الكبد)</li>
+                        <li><strong>MODY:</strong> السكري الناتج عن طفرات جينية</li>
+                        <li><strong>السكري النيونيتال:</strong> يظهر في الأطفال الرضع</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الأعراض -->
+            <div id="symptoms" class="tab-content">
+                <h2>⚕️ أعراض مرض السكري</h2>
+
+                <div class="symptoms-grid">
+                    <div class="symptom-item">
+                        <span class="icon">💧</span>
+                        <h4>العطش الشديد</h4>
+                        <p>الشعور بالعطش المستمر والحاجة المتكررة لشرب الماء</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">🚻</span>
+                        <h4>التبول المتكرر</h4>
+                        <p>الحاجة المتكررة للتبول خاصة في الليل</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">😴</span>
+                        <h4>الإرهاق والتعب</h4>
+                        <p>الشعور بالتعب والإرهاق المستمر دون سبب واضح</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">👁️</span>
+                        <h4>تشوش الرؤية</h4>
+                        <p>عدم وضوح في الرؤية وتغيرات في قوة البصر</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">⚖️</span>
+                        <h4>فقدان الوزن</h4>
+                        <p>فقدان الوزن دون محاولة متعمدة رغم الجوع</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">🩹</span>
+                        <h4>التئام بطيء للجروح</h4>
+                        <p>بطء التئام الجروح والإصابات والعدوى المتكررة</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">🔴</span>
+                        <h4>تنميل في الأطراف</h4>
+                        <p>خدران وتنميل في القدمين واليدين</p>
+                    </div>
+
+                    <div class="symptom-item">
+                        <span class="icon">💔</span>
+                        <h4>مشاكل جنسية</h4>
+                        <p>ضعف الانتصاب عند الرجال وضعف الرغبة الجنسية</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>⚡ أعراض الطوارئ</h3>
+                    <ul>
+                        <li>فقدان الوعي أو الدوار الشديد</li>
+                        <li>ضيق التنفس الحاد</li>
+                        <li>رائحة الفم الكريهة (مثل التفاح الفاسد)</li>
+                        <li>الغثيان والقيء الحاد</li>
+                        <li>آلام حادة في البطن</li>
+                        <li>الارتباك الذهني الشديد</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الأسباب والعوامل -->
+            <div id="causes" class="tab-content">
+                <h2>🔬 أسباب مرض السكري والعوامل المؤثرة</h2>
+
+                <div class="treatment-sections">
+                    <div class="treatment-section">
+                        <h3>🧬 العوامل الوراثية</h3>
+                        <ul class="treatment-list">
+                            <li>وجود السكري في العائلة يزيد من الخطر</li>
+                            <li>النوع الأول: 6% إلى 8% من الأطفال</li>
+                            <li>النوع الثاني: 30% إلى 40% من الأطفال</li>
+                            <li>عرق معين قد يكون أكثر عرضة</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>⚖️ السمنة والوزن الزائد</h3>
+                        <ul class="treatment-list">
+                            <li>زيادة الدهون تقلل حساسية الأنسولين</li>
+                            <li>الدهون في البطن أخطر من الدهون الأخرى</li>
+                            <li>فقدان 5-10% من الوزن يحسن المقاومة</li>
+                            <li>BMI أكثر من 30 = خطر مرتفع</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🧘 الخمول وقلة الحركة</h3>
+                        <ul class="treatment-list">
+                            <li>الجلوس لساعات طويلة يزيد من المخاطر</li>
+                            <li>ممارسة الرياضة تحسن استجابة الأنسولين</li>
+                            <li>150 دقيقة رياضة أسبوعية مهمة</li>
+                            <li>حتى المشي المنتظم يوميا مفيد جداً</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🍔 النظام الغذائي السيء</h3>
+                        <ul class="treatment-list">
+                            <li>الأطعمة المعالجة والسكريات ترفع السكر</li>
+                            <li>الدهون المشبعة تقلل حساسية الأنسولين</li>
+                            <li>الألياف تساعد على التحكم بالسكر</li>
+                            <li>الجفاف يركز السكر في الدم</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>😰 الإجهاد النفسي والتوتر</h3>
+                        <ul class="treatment-list">
+                            <li>الكورتيزول (هرمون التوتر) يرفع السكر</li>
+                            <li>الإجهاد المزمن يؤثر على البنكرياس</li>
+                            <li>قلة النوم تزيد من مقاومة الأنسولين</li>
+                            <li>الاسترخاء والتأمل يقللان التوتر</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🏥 الأمراض والأدوية</h3>
+                        <ul class="treatment-list">
+                            <li>أمراض البنكرياس تؤثر على إنتاج الأنسولين</li>
+                            <li>الالتهابات المزمنة ترفع السكر</li>
+                            <li>بعض الأدوية (الكورتيزونات) ترفع السكر</li>
+                            <li>التاريخ الطبي مهم جداً</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- العلاج والوقاية -->
+            <div id="treatment" class="tab-content">
+                <h2>💊 العلاج والوقاية</h2>
+
+                <div class="treatment-sections">
+                    <div class="treatment-section">
+                        <h3>🏃 الخطوات الأساسية للوقاية</h3>
+                        <ul class="treatment-list">
+                            <li>تقليل الوزن بشكل تدريجي</li>
+                            <li>ممارسة الرياضة 30 دقيقة يومياً</li>
+                            <li>اتباع نظام غذائي صحي متوازن</li>
+                            <li>تقليل السكريات والدهون</li>
+                            <li>زيادة الألياف والخضراوات</li>
+                            <li>الإقلاع عن التدخين والكحول</li>
+                            <li>الفحوصات الدورية المنتظمة</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🥗 النصائح الغذائية</h3>
+                        <ul class="treatment-list">
+                            <li>ركز على الحبوب الكاملة والألياف</li>
+                            <li>قلل السكريات البسيطة والعسل</li>
+                            <li>اختر البروتينات الخالية من الدهون</li>
+                            <li>كل الخضراوات والفواكه الطازجة</li>
+                            <li>تجنب المشروبات السكرية والعصائر</li>
+                            <li>اشرب الماء والشاي الطبيعي</li>
+                            <li>راقب حجم الوجبات والسعرات</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>💊 العلاجات الطبية</h3>
+                        <ul class="treatment-list">
+                            <li>الأنسولين: يُحقن تحت الجلد يومياً</li>
+                            <li>ميتفورمين: تقلل إنتاج السكر بالكبد</li>
+                            <li>السلفونيل يوريا: تحفز إفراز الأنسولين</li>
+                            <li>مثبطات الإنزيم: تبطئ هضم السكريات</li>
+                            <li>أدوية حديثة: GLP-1 و SGLT2</li>
+                            <li>علاجات مدمجة: قد تجمع عدة أدوية</li>
+                            <li>المراقبة المستمرة ضرورية جداً</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🏥 الفحوصات الدورية</h3>
+                        <ul class="treatment-list">
+                            <li>HbA1c: كل 3 أشهر (متوسط السكر)</li>
+                            <li>الجلوكوز الصيام: يومياً أو أسبوعياً</li>
+                            <li>ضغط الدم: كل شهر على الأقل</li>
+                            <li>الكوليسترول: كل 6 أشه��</li>
+                            <li>وظائف الكلى: سنوياً</li>
+                            <li>فحص العيون: سنوياً</li>
+                            <li>فحص الأقدام: شهرياً ذاتياً</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>🎯 الأهداف العلاجية</h3>
+                    <ul>
+                        <li><strong>HbA1c:</strong> أقل من 7% للعموم (أقل من 6.5% للوقاية)</li>
+                        <li><strong>سكر الصيام:</strong> 80-130 ملغ/ديسيلتر</li>
+                        <li><strong>ضغط الدم:</strong> أقل من 130/80</li>
+                        <li><strong>LDL الكوليسترول:</strong> أقل من 100</li>
+                        <li><strong>الوزن:</strong> BMI بين 18.5-24.9</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الإحصائيات -->
+            <div id="stats" class="tab-content">
+                <h2>📊 إحصائيات مهمة عن السكري</h2>
+
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">💡 537 م</div>
+                        <div class="stat-label">شخص مصاب بالسكري</div>
+                        <p>أكثر من 537 مليون شخص حول العالم مصابون بالسكري</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">🔢 2.3%</div>
+                        <div class="stat-label">نسبة الزيادة السنوية</div>
+                        <p>معدل الزيادة السنوية في حالات السكري حول العالم</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">🌍 90%</div>
+                        <div class="stat-label">من النوع الثاني</div>
+                        <p>حوالي 90% من المصابين بالسكري لديهم النوع الثاني</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">💰 327 ب</div>
+                        <div class="stat-label">التكاليف الطبية</div>
+                        <p>تكاليف علاج السكري تتجاوز 327 مليار دولار سنوياً</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">👶 1.2 م</div>
+                        <div class="stat-label">أطفال مصابون</div>
+                        <p>حوالي 1.2 مليون طفل مصابون بالسكري من النوع الأول</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">⚠️ 4.2 م</div>
+                        <div class="stat-label">وفيات سنوية</div>
+                        <p>حوالي 4.2 مليون وفاة سنوية مرتبطة بالسكري</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">👥 1 ب</div>
+                        <div class="stat-label">مقدمات السكري</div>
+                        <p>أكثر من 1 مليار شخص لديهم مقدمات السكري</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">📈 50%</div>
+                        <div class="stat-label">نسبة الاكتشاف</div>
+                        <p>حوالي 50% من المصابين لا يعرفون بإصابتهم بالسكري</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>🌐 التوزيع الجغرافي</h3>
+                    <ul>
+                        <li><strong>آسيا:</strong> تحتوي على أكثر من 60% من مصابي العالم</li>
+                        <li><strong>أفريقيا:</strong> أسرع منطقة نمواً في حالات السكري</li>
+                        <li><strong>العالم العربي:</strong> معدل إصابة عالي جداً</li>
+                        <li><strong>الدول النامية:</strong> الأكثر تضررا من السكري</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- نمط الحياة الصحي -->
+            <div id="lifestyle" class="tab-content">
+                <h2>🌱 نمط الحياة الصحي لمرضى السكري</h2>
+
+                <div class="treatment-sections">
+                    <div class="treatment-section">
+                        <h3>🏃 الرياضة والنشاط البدني</h3>
+                        <ul class="treatment-list">
+                            <li>المشي: 30 دقيقة يومياً على الأقل</li>
+                            <li>رياضات القلب: السباحة، الركض، الدراجة</li>
+                            <li>تمارين المقاومة: رفع الأثقال مرتين أسبوعياً</li>
+                            <li>اليوغا والتمدد: تقلل التوتر وتحسن المرونة</li>
+                            <li>ابدأ تدريجياً وزد المدة بالتدريج</li>
+                            <li>استشر طبيبك قبل برنامج جديد</li>
+                            <li>قس السكر قبل وبعد الرياضة</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>😴 النوم والراحة</h3>
+                        <ul class="treatment-list">
+                            <li>نم من 7-9 ساعات يومياً</li>
+                            <li>حافظ على جدول نوم منتظم</li>
+                            <li>تجنب الكافيين قبل النوم</li>
+                            <li>أطفئ الأضواء والشاشات</li>
+                            <li>غرفة النوم يجب أن تكون باردة وهادئة</li>
+                            <li>قيلولة قصيرة (15-20 دقيقة) تساعد</li>
+                            <li>قلة النوم ترفع السكر والتوتر</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🧘 إدارة التوتر والصحة النفسية</h3>
+                        <ul class="treatment-list">
+                            <li>التأمل: 10-15 دقيقة يومياً</li>
+                            <li>تمارين التنفس العميق</li>
+                            <li>قضاء وقت مع العائلة والأصدقاء</li>
+                            <li>ممارسة الهوايات المفضلة</li>
+                            <li>الاستماع إلى الموسيقى الهادئة</li>
+                            <li>طلب المساعدة من متخصص إذا لزم</li>
+                            <li>تقبل نفسك والعلاج بإيجابية</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>💧 الترطيب والنظافة</h3>
+                        <ul class="treatment-list">
+                            <li>اشرب 8-10 أكواب ماء يومياً</li>
+                            <li>تجنب المشروبات السكرية والكحولية</li>
+                            <li>الماء بلا سعرات حرارية</li>
+                            <li>القهوة والشاي الطبيعي مقبول (بدون سكر)</li>
+                            <li>اغسل يديك قبل قياس السكر</li>
+                            <li>نظف مواقع الحقن بعناية</li>
+                            <li>جفف قدميك جيداً بعد الاستحمام</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>🧴 العناية بالقدمين</h3>
+                        <ul class="treatment-list">
+                            <li>افحص قدميك يومياً للجروح</li>
+                            <li>اغسلهما بماء دافئ وصابون</li>
+                            <li>جففهما جيداً خاصة بين الأصابع</li>
+                            <li>رطبهما بكريم لكن ليس بين الأصابع</li>
+                            <li>قص الأظافر مستقيمة بعناية</li>
+                            <li>ارتدِ أحذية مريحة وجوارب قطنية</li>
+                            <li>تجنب المشي حافي القدمين</li>
+                        </ul>
+                    </div>
+
+                    <div class="treatment-section">
+                        <h3>📱 مراقبة ذاتية منتظمة</h3>
+                        <ul class="treatment-list">
+                            <li>قس السكر بجهاز موثوق</li>
+                            <li>احفظ السجلات وتذكر القراءات</li>
+                            <li>شارك النتائج مع طبيبك</li>
+                            <li>تطبيقات الهاتف تساعد في التتبع</li>
+                            <li>ارتدِ سوار تحذيري طبي</li>
+                            <li>احمل قطع السكر معك دائماً</li>
+                            <li>أخبر أقاربك عن أعراض الطوارئ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>🚀 نصائح للبقاء إيجابياً</h3>
+                    <ul>
+                        <li>السكري قابل للتحكم مع الالتزام</li>
+                        <li>لا تشعر بالذنب من الأخطاء الماضية</li>
+                        <li>ركز على ما تستطيع التحكم به</li>
+                        <li>انضم لمجموعات دعم المصابين</li>
+                        <li>تعلم أكثر عن مرضك</li>
+                        <li>احتفل بكل خطوة صغيرة نحو الأفضل</li>
+                        <li>الحياة الطويلة والصحية ممكنة!</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 مشروع تشريح مرض السكري | جميع الحقوق محفوظة</p>
+            <p>⚕️ تم إعداد هذا المحتوى لأغراض تعليمية فقط</p>
+            <p>🏥 استشير طبيبك دائماً قبل اتخاذ أي قرارات طبية</p>
+            <p>📞 اتصل برقم الطوارئ (911) في حالة الطوارئ</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // إخفاء جميع المحتويات
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // إزالة التفعيل من جميع الأزرار
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // إظهار المحتوى المطلوب
+            document.getElementById(tabName).classList.add('active');
+
+            // تفعيل الزر المطلوب
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
